@@ -1,7 +1,4 @@
-下面说明不完善，待修改
-解压Have you eaten.zip和nodeMysqlDemo.zip文件到同一目录下
-Have you eaten.zip为程序源码
-nodeMysqlDemo.zip为程序后端使用的Node.js和Express搭建的HTTP服务器
+nodeMysqlDemo为程序后端使用的Node.js和Express搭建的HTTP服务器
 
 首先确保你已经安装MySQL、Node.js和微信小程序开发者工具
 管理员身份打开node.js command prompt命令行

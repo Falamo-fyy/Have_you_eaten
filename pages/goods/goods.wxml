@@ -1,0 +1,22 @@
+<view wx:if="{{goodslist.length === 0}}">订单为空</view>
+
+<view>
+  <block wx:for="{{goodslist}}" wx:key="id">
+    <view class="order-container">
+      <text class="order-title">订单 ID: {{item.id}} | </text>
+      <text class="order-total">总价: ¥{{item.cartTotal}}</text>
+      <view class="cart-items">
+        <text>购物车商品:</text>
+        <block wx:for="{{item.cartItems}}" wx:key="id">
+          <view class="cart-item">
+            <image class="item-image" src="{{item.image}}" mode="aspectFit"></image>
+            <text class="item-name">商品名称: {{item.name}}</text>
+            <text  class="item-price">价格: ¥{{item.price}}</text>
+            <text class="item-quantity">数量: {{item.quantity}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+

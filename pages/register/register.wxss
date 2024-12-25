@@ -1,0 +1,25 @@
+.container {
+  padding: 20rpx;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.input-group text {
+  width: 100rpx;
+  line-height: 60rpx;
+}
+
+.input-group input {
+  flex: 1;
+  height: 60rpx;
+  border: 1px solid #ccc;
+  border-radius: 5rpx;
+  padding: 0 10rpx;
+}
+
+button {
+  margin-top: 30rpx;
+}

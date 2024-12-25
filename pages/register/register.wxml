@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="input-group">
+        <text>用户名：</text>
+        <input type="text" placeholder="请输入用户名" bindinput="onUsernameInput" />
+    </view>
+    <view class="input-group">
+        <text>密码：</text>
+        <input type="password" placeholder="请输入密码" bindinput="onPasswordInput" />
+    </view>
+    <view class="input-group">
+        <text>确认密码：</text>
+        <input type="password" placeholder="请再次输入密码" bindinput="onConfirmPasswordInput" />
+    </view>
+    <button type="primary" bindtap="handleRegister">注册</button>
+    <button type="primary" bindtap="gohandleRegister">返回</button>
+</view>

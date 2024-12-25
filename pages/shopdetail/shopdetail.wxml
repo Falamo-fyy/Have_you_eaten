@@ -1,0 +1,53 @@
+
+<view class="shop-detail">
+   <!-- 购物车商品信息模态框 -->
+   <modal title="购物车商品" wx:if="{{cartModalShow}}" bindcancel="closeCartModal">
+       <view wx:for="{{cartItems}}" wx:key="id">
+           <image class="shop-car-view" src="{{item.image}}" mode="aspectFit"></image>
+           <view></view>
+           <text>{{item.name}}|数量: {{item.quantity}}|</text>
+           <button size="mini" bindtap="decreaseQuantity" data-id="{{item.id}}" class="shop-car-datar">-1</button>
+       </view>
+   </modal>
+   
+  <!-- 商家头部信息 -->
+  <view class="shop-header">
+    <image class="shop-icon" src="{{shopList[query.id-1].icon}}" mode="aspectFit"></image>
+    <view class="shop-info">
+      <text class="shop-name">{{shopList[query.id-1].name}}\n</text>
+      <text class="shop-rating">评分：{{shopList[query.id-1].rating}}⭐ | 月售：{{shopList[query.id-1].sales}}单</text>
+    <view>
+      <text class="shop-discount">满1024减256（不参与霸王餐活动）</text>
+    </view>
+    </view>
+  </view>
+
+  <!-- 商品分类栏 -->
+  <view class="category-bar">
+    <view wx:for="{{categories}}" wx:key="index" class="category-item" data-index="{{index}}" bindtap="switchCategory" wx:class="{{currentCategory === index ? 'active' : ''}}">
+      {{item.name}}
+    </view>
+  </view>
+
+  <!-- 商品列表 -->
+  <view class="product-list">
+    <view wx:for="{{currentProducts}}" wx:key="id" class="product-item">
+      <image class="product-icon" src="{{item.image}}" mode="aspectFit"></image>
+      <view class="product-details">
+        <text class="product-name">{{item.name}}</text>
+        <text class="product-desc">{{item.description}}</text>
+        <text class="product-stats">月售{{item.sales}}份 好评率{{item.rating}}%</text>
+        <text class="product-price">￥{{item.price}}</text>
+        <button class="add-btn" bindtap="addToCart" data-id="{{item.id}}">购买+1</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="cart-bar">
+    <text>金额</text>
+    <text class="cart - total">￥{{cartTotal}}.00 </text>
+    <button class="clear-cart-btn" bindtap="clearCart">清空</button>
+    <button class="view-cart-btn" bindtap="viewCartItems">查看</button>
+    <button class="checkout-btn" bindtap="goToShoppingCart">结算</button>
+  </view>
+</view>

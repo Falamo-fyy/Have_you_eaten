@@ -1,0 +1,82 @@
+/* pages/goods/goods.wxss */
+/* 页面整体样式 */
+page {
+  background-color: #f8f8f8;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* 订单容器样式 */
+.order-container {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* 订单标题 */
+.order-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+/* 订单总价 */
+.order-total {
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+/* 商品容器 */
+.cart-items {
+  border-top: 1px solid #eeeeee;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* 单个商品项 */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-image{
+  width: 180rpx; /* 调整图片尺寸 */
+  height: 180rpx;
+  margin-right: 20rpx;
+  display: block;
+}
+
+/* 商品名称 */
+.item-name {
+  font-size: 14px;
+  color: #333333;
+  flex: 2;
+}
+
+/* 商品价格 */
+.item-price {
+  font-size: 14px;
+  color: #888888;
+  flex: 1;
+  text-align: center;
+}
+
+/* 商品数量 */
+.item-quantity {
+  font-size: 14px;
+  color: #444444;
+  flex: 1;
+  text-align: right;
+}

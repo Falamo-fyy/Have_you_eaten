@@ -1,0 +1,33 @@
+<view wx:if="{{cartItems.length === 0}}" class="information">购物车为空 / 用户未登陆</view>
+<view class="container">
+  <view wx:for="{{cartItems}}" wx:key="index">
+    <view class="product-item">
+      <!-- 图片 -->
+      <image class="product-image" src="{{item.image}}" mode="aspectFit"></image>
+      <!-- 商品信息 -->
+      <view class="product-info">
+        <text class="product-name">{{item.name}}</text>
+        <text class="product-sales">月售{{item.sales}}份</text>
+      </view>
+      
+      <!-- 数量和价格 -->
+      <view class="product-quantity-price">
+        <view class="quantity-controls">
+          <button bindtap="decreaseQuantity" data-index="{{index}}">-</button>
+          <text>{{item.quantity}}</text>
+          <button bindtap="increaseQuantity" data-index="{{index}}">+</button>
+        </view>
+        
+      </view>
+      <text class="product-price">¥{{item.price*item.quantity}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 固定底部栏 -->
+<view class="footer">
+  <text>总金额: ¥{{cartTotal}}</text>
+  <button bindtap="clear_footer" class="footer-clear">清空</button>
+  <button bindtap="submitOrder" class="footer-submitOrder">提交订单</button>
+</view>
+

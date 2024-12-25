@@ -1,0 +1,108 @@
+.information{
+  font-size: 50rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+/* 商品项整体布局 */
+.product-item {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: space-between; /* 左右两侧对齐 */
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+
+/* 勾选框样式 */
+.checkbox {
+  margin-right: 20rpx;
+  align-self: center;
+}
+
+/* 商品图片样式 */
+.product-image {
+  width: 180rpx; /* 调整图片尺寸 */
+  height: 180rpx;
+  margin-right: 20rpx;
+  display: block;
+}
+
+/* 商品信息列样式 */
+.product-info {
+  flex: 1; /* 自适应宽度 */
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+  text-align: left;
+}
+
+.product-sales{
+  color: #666;
+  font-size: 30rpx;
+}
+
+/* 数量和价格右对齐 */
+.quantity-price {
+  font-size: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 右对齐 */
+}
+
+/* 按钮样式调整 */
+.quantity-button {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 5rpx;
+  margin: 0 10rpx;
+}
+
+.product-price {
+  font-size: 40rpx;
+  color: red;
+}
+
+/* 固定底部栏样式 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+  z-index: 1000;
+}
+.footer-clear{
+  background-color: #ff5722;
+      color: #fff;
+      border: none;
+      padding: 15rpx 8rpx;
+      border-radius: 5px;
+}
+
+.footer-submitOrder{
+  background-color: #007aff;
+      color: #fff;
+      border: none;
+      padding: 15rpx 8rpx;
+      border-radius: 5px;
+}
+.quantity-controls button {
+  width: 20px;
+  margin-right: auto; 
+  margin-left: auto; 
+}
+

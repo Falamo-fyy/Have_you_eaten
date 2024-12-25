@@ -1,0 +1,78 @@
+/* pages/shoplist/shoplist.wxss */
+.shop-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+  background-color: #fff;
+}
+
+/* 设置 button 的默认样式清除 */
+button.shop-item {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-align: left;
+  width: 100%;
+}
+
+/* 缩略图样式 */
+.thumb image {
+  width: 230rpx;
+  height: 230rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+
+/* 信息区域 */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+
+/* 商家标题 */
+.shopList-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+/* 标签区域 */
+.shop-tags {
+  display: flex;
+  font-size: 28rpx;
+  color: #888;
+  margin-bottom: 10rpx;
+}
+
+.shop-tags .rating {
+  margin-right: 20rpx;
+  color: #f60;
+}
+
+.shop-tags .monthly-sales {
+  color: #666;
+}
+
+/* 配送费用信息 */
+.delivery-info {
+  font-size: 25rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+/* 优惠信息 */
+.sales-info {
+  font-size: 25rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+

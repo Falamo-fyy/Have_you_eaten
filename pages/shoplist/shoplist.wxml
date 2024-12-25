@@ -1,0 +1,26 @@
+<view>
+  <button 
+    class="shop-item" 
+    wx:for="{{shopList}}" 
+    wx:key="id" 
+    wx:if="{{query.name === '美食' || query.name === item.category || query.name === item.category2}}"
+    bindtap="goToShopDetail" 
+    data-id="{{item.id}}"
+  >
+    <view class="thumb">
+      <image src="{{item.icon}}" mode="aspectFit"></image>
+    </view>
+    <view class="info">
+      <text class="shopList-title">{{item.name}}</text>
+      <view class="shop-tags">
+        <text class="rating">评分：{{item.rating}}⭐</text>
+        <text class="monthly-sales">月售：{{item.sales}}单</text>
+      </view>
+      <view class="delivery-info">
+        <text>起送费：￥{{item.send}} | </text>
+        <text>配送费：￥{{item.price}}</text>
+      </view>
+      <text class="sales-info">满1024减256（不参与霸王餐活动）</text>
+    </view>
+  </button>
+</view>

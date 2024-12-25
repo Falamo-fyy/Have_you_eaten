@@ -1,0 +1,75 @@
+/* 页面整体样式 */
+page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* 头像样式 */
+.avatar-section {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 2px solid #dddddd;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-button, .logout-button {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logout-button {
+  background-color: #ff5722;
+}
+
+.welcome-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.other-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 15px;
+}
+
+.forgot-password, .register {
+  text-decoration: underline;
+}
+
+.register {
+  color: #4caf50;
+}

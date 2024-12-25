@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/take-out/take-out",
+    "pages/shopping_cart/shopping_cart",
+    "pages/goods/goods",
+    "pages/home/home",
+    "pages/shoplist/shoplist",
+    "pages/shopdetail/shopdetail",
+    "pages/register/register"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "吃了么外卖",
+    "navigationBarBackgroundColor": "#2b4b6b"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/take-out/take-out",
+        "text": "外卖",
+        "iconPath": "/image/waimai0.png",
+        "selectedIconPath": "/image/waimai1.png"
+      },
+      {
+        "pagePath": "pages/shopping_cart/shopping_cart",
+        "text": "购物车",
+        "iconPath": "/image/gouwuche0.png",
+        "selectedIconPath": "/image/gouwuche1.png",
+        "cache":false
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "订单",
+        "iconPath": "/image/goods0.png",
+        "selectedIconPath": "/image/goods1.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "/image/me0.png",
+        "selectedIconPath": "/image/me1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,179 @@
+/* pages/take-out/take-out.wxss */
+.lunbo{
+  height: 400rpx;
+}
+
+swiper{
+  width: 100%;
+  height: calc(100vw*683/1024);
+}
+image{
+  width: 100%;
+}
+
+.FenLei-list{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1rpx solid #efefef;
+  border-top: 1rpx solid #efefef;
+}
+
+.FenLei-item{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right:1rpx solid #efefef ;
+  border-bottom: 1rpx solid #efefef;
+  box-sizing: border-box;
+}
+
+.FenLei-item image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.FenLei-item text{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+/* 父容器：卡片的外层布局 */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* 允许子元素换行 */
+  justify-content: space-between; /* 子元素均匀分布 */
+  gap: 10px; /* 卡片间距 */
+  padding: 10px; /* 内边距 */
+  background-color: #f5f5f5; /* 背景色 */
+}
+
+/* 每张卡片 */
+.card {
+  width: 41%; /* 每张卡片占父容器的48%宽度 */
+  background-color: #fff; /* 卡片背景色 */
+  padding: 10px; /* 内边距 */
+  border-radius: 5px; /* 圆角边框 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  display: flex;
+  flex-direction: row; /* 文字和图片左右排列 */
+  align-items: center; /* 垂直居中 */
+}
+
+/* 卡片内容 */
+.card-content {
+  display: flex;
+  flex-direction: row; /* 使文字和图片左右排列 */
+  justify-content: space-between; /* 空间分配 */
+  align-items: center; /* 垂直居中 */
+  width: 100%;
+}
+
+/* 左侧文字部分 */
+.card-text {
+  display: flex;
+  flex-direction: column; /* 文字分上下两行 */
+  align-items: center; /* 居中对齐 */
+}
+
+
+.card-title {
+  font-size: 16px; /* 主标题字号 */
+  font-weight: bold; /* 加粗 */
+  color: #333; /* 主标题颜色 */
+}
+
+.card-subtitle {
+  font-size: 14px; /* 副标题字号 */
+  color: #666; /* 副标题颜色 */
+  margin-top: 5px; /* 主标题与副标题的间距 */
+}
+
+/* 右侧图片部分 */
+.card-image {
+  width: 60px; /* 图片固定宽度 */
+  height: 60px; /* 图片固定高度 */
+  border-radius: 5px; /* 图片圆角 */
+  background-color: #e0e0e0; 
+}
+
+/* 商品列表 */
+/* pages/shoplist/shoplist.wxss */
+.shop-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+  background-color: #fff;
+}
+
+/* 设置 button 的默认样式清除 */
+button.shop-item {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-align: left;
+  width: 100%;
+}
+
+/* 缩略图样式 */
+.thumb image {
+  width: 230rpx;
+  height: 230rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+
+/* 信息区域 */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+
+/* 商家标题 */
+.shopList-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+/* 标签区域 */
+.shop-tags {
+  display: flex;
+  font-size: 28rpx;
+  color: #888;
+  margin-bottom: 10rpx;
+}
+
+.shop-tags .rating {
+  margin-right: 20rpx;
+  color: #f60;
+}
+
+.shop-tags .monthly-sales {
+  color: #666;
+}
+
+/* 配送费用信息 */
+.delivery-info {
+  font-size: 25rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+/* 优惠信息 */
+.sales-info {
+  font-size: 25rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+
